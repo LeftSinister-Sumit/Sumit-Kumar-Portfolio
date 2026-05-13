@@ -8,7 +8,7 @@ export default function Certifications({ certifications }) {
     <section id="certifications" className="py-28 px-6">
       <div className="max-w-6xl mx-auto" ref={ref}>
         <div className={`reveal ${visible ? 'visible' : ''}`}>
-          <p className="section-label mb-3">// 03 — Certifications</p>
+          <p className="section-label mb-3">{"// 03 — Certifications"}</p>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-[#e2e8e8] mb-16">
             Professional Credentials
           </h2>
@@ -78,7 +78,7 @@ export default function Certifications({ certifications }) {
         <div className={`reveal mt-12 p-6 border border-[rgba(45,212,191,0.1)] bg-[rgba(45,212,191,0.02)] ${visible ? 'visible' : ''}`}
           style={{ transitionDelay: '400ms' }}>
           <p className="font-mono text-xs text-[#5a7070] uppercase tracking-widest mb-4">
-            // Certification Roadmap
+            {"// Certification Roadmap"}
           </p>
           <div className="flex flex-wrap items-center gap-3">
             {[

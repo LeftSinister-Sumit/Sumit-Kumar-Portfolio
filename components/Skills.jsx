@@ -33,7 +33,7 @@ export default function Skills({ skills }) {
     <section id="skills" className="py-28 px-6 bg-[#0d1414]/40">
       <div className="max-w-6xl mx-auto" ref={ref}>
         <div className={`reveal ${visible ? 'visible' : ''}`}>
-          <p className="section-label mb-3">// 02 — Skills</p>
+          <p className="section-label mb-3">{"// 02 — Skills"}</p>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-[#e2e8e8] mb-4">
             Technical Competencies
           </h2>
@@ -78,7 +78,7 @@ export default function Skills({ skills }) {
         {/* Tool badges */}
         <div className={`reveal mt-12 ${visible ? 'visible' : ''}`} style={{ transitionDelay: '400ms' }}>
           <p className="font-mono text-xs text-[#5a7070] uppercase tracking-widest mb-4">
-            // Additional tools & technologies
+            {"// Additional tools & technologies"}
           </p>
           <div className="flex flex-wrap gap-2">
             {[

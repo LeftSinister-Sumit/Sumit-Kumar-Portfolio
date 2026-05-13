@@ -45,7 +45,7 @@ export default function Resume({ personal }) {
     <section id="resume" className="py-28 px-6 bg-[#0d1414]/40">
       <div className="max-w-5xl mx-auto" ref={ref}>
         <div className={`reveal ${visible ? 'visible' : ''}`}>
-          <p className="section-label mb-3">// 06 — Resume</p>
+          <p className="section-label mb-3">{"// 06 — Resume"}</p>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-[#e2e8e8] mb-4">
             Experience & Background
           </h2>
@@ -140,7 +140,7 @@ export default function Resume({ personal }) {
             {/* Notable soft skills */}
             <div className="p-5 border border-[rgba(45,212,191,0.1)] bg-[rgba(45,212,191,0.02)]">
               <p className="font-mono text-[10px] text-[#5a7070] uppercase tracking-widest mb-3">
-                // Communication & Reporting
+                {"// Communication & Reporting"}
               </p>
               <p className="text-sm text-[#94a3a3] leading-relaxed">
                 Experienced writing pentest reports for both technical and executive audiences.

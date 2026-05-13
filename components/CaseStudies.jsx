@@ -195,7 +195,7 @@ export default function CaseStudies({ caseStudies }) {
     <section id="cases" className="py-28 px-6">
       <div className="max-w-5xl mx-auto">
         <div className={`reveal ${visible ? 'visible' : ''}`} ref={ref}>
-          <p className="section-label mb-3">// 05 — Case Studies</p>
+          <p className="section-label mb-3">{"// 05 — Case Studies"}</p>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-[#e2e8e8] mb-4">
             Documented Work
           </h2>

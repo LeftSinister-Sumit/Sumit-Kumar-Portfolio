@@ -10,7 +10,7 @@ export default function Labs({ labProgress }) {
     <section id="labs" className="py-28 px-6 bg-[#0d1414]/40">
       <div className="max-w-6xl mx-auto" ref={ref}>
         <div className={`reveal ${visible ? 'visible' : ''}`}>
-          <p className="section-label mb-3">// 04 — Labs & Practice</p>
+          <p className="section-label mb-3">{"// 04 — Labs & Practice"}</p>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-[#e2e8e8] mb-4">
             Hands-On Training
           </h2>

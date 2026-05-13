@@ -21,7 +21,7 @@ export default function Contact({ personal }) {
     <section id="contact" className="py-28 px-6">
       <div className="max-w-5xl mx-auto" ref={ref}>
         <div className={`reveal ${visible ? 'visible' : ''}`}>
-          <p className="section-label mb-3">// 07 — Contact</p>
+          <p className="section-label mb-3">{"// 07 — Contact"}</p>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-[#e2e8e8] mb-4">
             Get In Touch
           </h2>
@@ -109,7 +109,7 @@ export default function Contact({ personal }) {
                   <Send size={18} className="text-[#2dd4bf]" />
                 </div>
                 <h3 className="font-display font-semibold text-[#e2e8e8] mb-2">Message Sent</h3>
-                <p className="font-mono text-xs text-[#5a7070]">I'll get back to you within 48 hours.</p>
+                <p className="font-mono text-xs text-[#5a7070]">I&apos;ll get back to you within 48 hours.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">

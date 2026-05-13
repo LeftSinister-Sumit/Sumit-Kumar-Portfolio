@@ -9,7 +9,7 @@ export default function About({ personal, timeline }) {
       <div className="max-w-6xl mx-auto" ref={ref}>
         {/* Section header */}
         <div className={`reveal ${visible ? 'visible' : ''}`}>
-          <p className="section-label mb-3">// 01 — About</p>
+          <p className="section-label mb-3">{"// 01 — About"}</p>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-[#e2e8e8] mb-16">
             Background & Approach
           </h2>
@@ -62,7 +62,7 @@ export default function About({ personal, timeline }) {
           {/* Right: timeline */}
           <div className={`reveal ${visible ? 'visible' : ''}`} style={{ transitionDelay: '200ms' }}>
             <p className="font-mono text-xs text-[#5a7070] uppercase tracking-widest mb-6">
-              // Journey
+              {"// Journey"}
             </p>
             <div className="space-y-8">
               {timeline.map((item, i) => (
