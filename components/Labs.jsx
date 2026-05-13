@@ -36,7 +36,7 @@ export default function Labs({ labProgress }) {
                 </div>
               </div>
               <a
-                href="https://tryhackme.com"
+                href="https://tryhackme.com/p/LeftSinister"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#5a7070] hover:text-[#2dd4bf] transition-colors"
