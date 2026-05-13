@@ -6,8 +6,8 @@ export default function Document() {
       <Head>
         <meta charSet="utf-8" />
         <meta name="theme-color" content="#080c0c" />
-        <meta name="description" content="Alex Mercer — Cybersecurity Analyst & Penetration Tester. Web application security, vulnerability assessment, TryHackMe Top 5%, PNPT certified." />
-        <meta property="og:title" content="Alex Mercer | Cybersecurity Analyst & Pentester" />
+        <meta name="description" content="Sumit Kumar — Cybersecurity Analyst & Penetration Tester. Web application security, network vulnerability assessment, and hands-on penetration testing." />
+        <meta property="og:title" content="Sumit Kumar | Cybersecurity Analyst & Pentester" />
         <meta property="og:description" content="Security practitioner specializing in web application pentesting, network vulnerability assessment, and adversarial simulation." />
         <meta property="og:type" content="website" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
