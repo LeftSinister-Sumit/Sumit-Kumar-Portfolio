@@ -99,7 +99,7 @@ export const labProgress = [
     points: "12000+",
     streak: "60+",
     paths: ["Pre-Security", "CyberSecurity 101", "Jr Penetration Tester"],
-    badge_url: "https://tryhackme-badges.s3.amazonaws.com/alexmercer.png",
+    badge_url: "https://tryhackme-badges.s3.amazonaws.com/LeftSinister.png",
   },
   {
     platform: "PortSwigger",
