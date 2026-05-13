@@ -10,7 +10,7 @@ export default async function handler(
 
     const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
 
-    if (!webhookUrl || webhookUrl === "https://discord.com/api/webhooks/1504153199362314320/lxrFGicVNTO1slopU8jLpKCRRv6eZdCZwkHtCPWucFfxa-rITkwZimDXLA7KajGqWZlw") {
+    if (!webhookUrl || webhookUrl === "your_discord_webhook_url_here") {
         console.warn(
             "DISCORD_WEBHOOK_URL is not configured. Message logged to console:",
             formData,
