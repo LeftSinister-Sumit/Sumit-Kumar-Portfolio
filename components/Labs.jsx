@@ -90,7 +90,7 @@ export default function Labs({ labProgress }) {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-3">
                 <div className="w-9 h-9 flex items-center justify-center border border-[rgba(45,212,191,0.2)] bg-[rgba(45,212,191,0.05)] font-mono text-xs text-[#2dd4bf] font-bold">
-                  HTB
+                  PS
                 </div>
                 <div>
                   <h3 className="font-display font-semibold text-[#e2e8e8]">PortSwigger</h3>
