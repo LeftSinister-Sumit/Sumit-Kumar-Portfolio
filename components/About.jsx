@@ -5,11 +5,11 @@ export default function About({ personal, timeline }) {
   const { ref, visible } = useReveal();
 
   return (
-    <section id="about" className="py-28 px-6">
+    <section id="about" className="py-16 md:py-20 lg:py-24 px-6">
       <div className="max-w-6xl mx-auto" ref={ref}>
         {/* Section header */}
         <div className={`reveal ${visible ? 'visible' : ''}`}>
-          <p className="section-label mb-3">{"// 01 — About"}</p>
+          <p className="section-label mb-3">{"// About"}</p>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-[#e2e8e8] mb-16">
             Background & Approach
           </h2>
@@ -23,40 +23,28 @@ export default function About({ personal, timeline }) {
               <p>{personal.bio2}</p>
             </div>
 
-            {/* Contact info */}
-            <div className="mt-8 space-y-3">
-              {[
-                { icon: MapPin, label: personal.location },
-                { icon: Mail, label: personal.email, href: `mailto:${personal.email}` },
-                { icon: Github, label: 'github.com/', href: personal.github },
-              ].map(({ icon: Icon, label, href }) => (
-                <div key={label} className="flex items-center gap-3">
-                  <Icon size={14} className="text-[#2dd4bf] flex-shrink-0" />
-                  {href ? (
-                    <a
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-mono text-sm text-[#94a3a3] hover:text-[#2dd4bf] transition-colors"
-                    >
-                      {label}
-                    </a>
-                  ) : (
-                    <span className="font-mono text-sm text-[#94a3a3]">{label}</span>
-                  )}
-                </div>
-              ))}
+            {/* Core Principles */}
+            <div className="mt-10">
+              <p className="font-mono text-xs text-[#5a7070] uppercase tracking-widest mb-4">
+                {"// Methodology & Approach"}
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {[
+                  "Continuous Enumeration",
+                  "Assume Breach Mentality",
+                  "Methodical Documentation",
+                  "Responsible Disclosure",
+                ].map((principle) => (
+                  <div key={principle} className="flex items-center gap-3 bg-[rgba(45,212,191,0.02)] border border-[rgba(45,212,191,0.08)] p-3">
+                    <div className="w-1.5 h-1.5 bg-[#2dd4bf] flex-shrink-0" />
+                    <span className="font-mono text-xs text-[#94a3a3]">{principle}</span>
+                  </div>
+                ))}
+              </div>
             </div>
 
-            {/* Platform badges */}
-            <div className="mt-8 flex flex-wrap gap-2">
-              <a href={personal.tryhackme} target="_blank" rel="noopener noreferrer"
-                className="badge hover:border-[rgba(45,212,191,0.5)] transition-colors">
-                <ExternalLink size={10} /> TryHackMe: Top 5%
-              </a>
-              <span className="badge">HTB: Pro Hacker</span>
-              <span className="badge">PNPT Certified</span>
-            </div>
+
+
           </div>
 
           {/* Right: timeline */}

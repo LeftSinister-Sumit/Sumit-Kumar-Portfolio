@@ -42,10 +42,10 @@ export default function Resume({ personal }) {
   ];
 
   return (
-    <section id="resume" className="py-28 px-6 bg-[#0d1414]/40">
+    <section id="resume" className="py-16 md:py-20 lg:py-24 px-6 bg-[#0d1414]/40">
       <div className="max-w-5xl mx-auto" ref={ref}>
         <div className={`reveal ${visible ? 'visible' : ''}`}>
-          <p className="section-label mb-3">{"// 06 — Resume"}</p>
+          <p className="section-label mb-3">{"// Resume"}</p>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-[#e2e8e8] mb-4">
             Experience & Background
           </h2>

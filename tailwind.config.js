@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
-        sans: ['Syne', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
         display: ['Syne', 'system-ui', 'sans-serif'],
       },
       colors: {

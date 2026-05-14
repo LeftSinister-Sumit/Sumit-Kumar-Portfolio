@@ -126,7 +126,7 @@ export default function Hero({ personal }) {
           style={{ transitionDelay: '450ms' }}
         >
           <p className="text-[#94a3a3] text-base md:text-lg leading-relaxed">
-            {personal.bio}
+            {personal.heroBio}
           </p>
         </div>
 

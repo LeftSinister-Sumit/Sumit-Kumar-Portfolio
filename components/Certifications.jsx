@@ -5,10 +5,10 @@ export default function Certifications({ certifications }) {
   const { ref, visible } = useReveal();
 
   return (
-    <section id="certifications" className="py-28 px-6">
+    <section id="certifications" className="py-16 md:py-20 lg:py-24 px-6">
       <div className="max-w-6xl mx-auto" ref={ref}>
         <div className={`reveal ${visible ? 'visible' : ''}`}>
-          <p className="section-label mb-3">{"// 03 — Certifications"}</p>
+          <p className="section-label mb-3">{"// Certifications"}</p>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-[#e2e8e8] mb-16">
             Professional Credentials
           </h2>
@@ -74,35 +74,7 @@ export default function Certifications({ certifications }) {
           ))}
         </div>
 
-        {/* Learning roadmap */}
-        <div className={`reveal mt-12 p-6 border border-[rgba(45,212,191,0.1)] bg-[rgba(45,212,191,0.02)] ${visible ? 'visible' : ''}`}
-          style={{ transitionDelay: '400ms' }}>
-          <p className="font-mono text-xs text-[#5a7070] uppercase tracking-widest mb-4">
-            {"// Certification Roadmap"}
-          </p>
-          <div className="flex flex-wrap items-center gap-3">
-            {[
-              { name: 'CC', done: true },
-              { name: 'IBM', done: true },
-              { name: 'ejpt', done: false, active: true },
-              { name: 'OSCP', done: false, active: false },
-            ].map((item, i) => (
-              <div key={i} className="flex items-center gap-2">
-                <span
-                  className={`font-mono text-xs px-3 py-1.5 border ${item.done
-                      ? 'border-[rgba(45,212,191,0.3)] text-[#2dd4bf] bg-[rgba(45,212,191,0.06)]'
-                      : item.active
-                        ? 'border-[rgba(45,212,191,0.2)] text-[#5a7070] bg-transparent animate-pulse'
-                        : 'border-[rgba(255,255,255,0.05)] text-[#2a3a3a]'
-                    }`}
-                >
-                  {item.done ? '✓ ' : item.active ? '→ ' : '○ '}{item.name}
-                </span>
-                {i < 5 && <span className="text-[#2a3a3a] font-mono text-xs">—</span>}
-              </div>
-            ))}
-          </div>
-        </div>
+
       </div>
     </section>
   );

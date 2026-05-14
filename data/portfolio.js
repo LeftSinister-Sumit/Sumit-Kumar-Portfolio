@@ -10,6 +10,7 @@ export const personal = {
   linkedin: "https://www.linkedin.com/in/sumitkumar-cyber",
   tryhackme: "https://tryhackme.com/p/LeftSinister",
   resume: "/Sumit_VAPT_Resume.pdf",
+  heroBio: `Hack the planet. Exploit first, ask never. just joking:)`,
   bio: `Aspiring cybersecurity professional focused on web application security, network vulnerability assessment, and hands-on penetration testing. I document every lab and assessment with clear methodology, findings, and remediation steps because structured, reproducible work is the foundation of professional security practice.`,
   bio2: `Cybersecurity learner focused on web application testing, network vulnerability assessment, and hands-on lab practice. I work methodically by understanding systems, enumerating thoroughly, testing responsibly, and documenting findings with clear remediation steps.`,
   status: "Open to opportunities",

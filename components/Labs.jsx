@@ -7,15 +7,15 @@ export default function Labs({ labProgress }) {
   const htb = labProgress[1];
 
   return (
-    <section id="labs" className="py-28 px-6 bg-[#0d1414]/40">
+    <section id="labs" className="py-16 md:py-20 lg:py-24 px-6 bg-[#0d1414]/40">
       <div className="max-w-6xl mx-auto" ref={ref}>
         <div className={`reveal ${visible ? 'visible' : ''}`}>
-          <p className="section-label mb-3">{"// 04 — Labs & Practice"}</p>
+          <p className="section-label mb-3">{"// Labs & Practice"}</p>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-[#e2e8e8] mb-4">
             Hands-On Training
           </h2>
           <p className="text-[#5a7070] font-mono text-sm mb-16">
-            Active on CTF platforms, HTB machines, and TryHackMe learning paths
+
           </p>
         </div>
 
@@ -47,15 +47,15 @@ export default function Labs({ labProgress }) {
             </div>
 
             {/* Stats grid */}
-            <div className="grid grid-cols-3 gap-4 mb-6">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-6">
               {[
                 { label: 'Rooms', value: thm.rooms },
                 { label: 'Points', value: thm.points.toLocaleString() },
                 { label: 'Day Streak', value: thm.streak },
               ].map(({ label, value }) => (
-                <div key={label} className="text-center p-3 bg-[rgba(45,212,191,0.03)] border border-[rgba(45,212,191,0.08)]">
-                  <div className="font-display font-bold text-xl text-[#2dd4bf]">{value}</div>
-                  <div className="font-mono text-[10px] text-[#5a7070] uppercase tracking-widest mt-1">{label}</div>
+                <div key={label} className="text-center p-2 sm:p-3 bg-[rgba(45,212,191,0.03)] border border-[rgba(45,212,191,0.08)]">
+                  <div className="font-display font-bold text-sm sm:text-xl text-[#2dd4bf] break-all">{value}</div>
+                  <div className="font-mono text-[9px] sm:text-[10px] text-[#5a7070] uppercase tracking-widest mt-1">{label}</div>
                 </div>
               ))}
             </div>
@@ -109,15 +109,15 @@ export default function Labs({ labProgress }) {
             </div>
 
             {/* Stats grid */}
-            <div className="grid grid-cols-3 gap-4 mb-6">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-6">
               {[
                 { label: 'Machines', value: htb.machines },
                 { label: 'Challenges', value: htb.challenges },
                 { label: 'Points', value: htb.points.toLocaleString() },
               ].map(({ label, value }) => (
-                <div key={label} className="text-center p-3 bg-[rgba(45,212,191,0.03)] border border-[rgba(45,212,191,0.08)]">
-                  <div className="font-display font-bold text-xl text-[#2dd4bf]">{value}</div>
-                  <div className="font-mono text-[10px] text-[#5a7070] uppercase tracking-widest mt-1">{label}</div>
+                <div key={label} className="text-center p-2 sm:p-3 bg-[rgba(45,212,191,0.03)] border border-[rgba(45,212,191,0.08)]">
+                  <div className="font-display font-bold text-sm sm:text-xl text-[#2dd4bf] break-all">{value}</div>
+                  <div className="font-mono text-[9px] sm:text-[10px] text-[#5a7070] uppercase tracking-widest mt-1">{label}</div>
                 </div>
               ))}
             </div>
@@ -154,35 +154,7 @@ export default function Labs({ labProgress }) {
           </div>
         </div>
 
-        {/* CTF & Bug Bounty row */}
-        <div
-          className={`reveal mt-8 grid md:grid-cols-3 gap-4 ${visible ? 'visible' : ''}`}
-          style={{ transitionDelay: '300ms' }}
-        >
-          {[
-            {
-              title: 'CTF Competitions',
-              value: '0',
-              detail: 'Not_Started_Yet',
-            },
-            {
-              title: 'Bug Bounty',
-              value: '0',
-              detail: 'Not_Started_Yet',
-            },
-            {
-              title: 'Write-ups Published',
-              value: '5',
-              detail: 'Documented solutions on GitHub and personal notes — methodology-focused.',
-            },
-          ].map(({ title, value, detail }) => (
-            <div key={title} className="card p-5">
-              <div className="font-display font-bold text-2xl text-[#2dd4bf] mb-1">{value}</div>
-              <div className="font-mono text-xs text-[#94a3a3] uppercase tracking-widest mb-2">{title}</div>
-              <p className="text-sm text-[#5a7070] leading-relaxed">{detail}</p>
-            </div>
-          ))}
-        </div>
+
       </div>
     </section>
   );
